@@ -7,7 +7,7 @@ h1 {
   color: blue;
 }
 img {
-  display: block;
+  display: none;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -43,14 +43,14 @@ img {
   <script>
   
   var currentIndex = 0; 
-  var images = document.getElementbyClassID (carousel-img")
+  var images = document.getElementbyClassSelectorAll (carousel-img")
  
   function showImage(index) {
     for (var i= 0 i <images.length; i++) {
         images[i].style.display = none;
     }
         images[index].style.display = "block";
-        currentIndex = Index;
+        currentIndex = index;
   }
     function nextImage() {
         current index = (currentIndex + 1) % images.length;
@@ -63,6 +63,9 @@ img {
 
     showImage (currentIndex);
   </script>
+
+    <button onclick="previousImage()">Previous</button>
+    <button onclick="nextImage()></button>
 
 </body>
 </html>
