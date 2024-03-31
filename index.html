@@ -30,16 +30,43 @@ img {
  
   <div class="container"> 
     <img src="IMG_0032.jpg"></img>
-    <div class="centered">Dinner Recipes</div>
+    <img src="IMG_0039 (002).jpg"></img>
+    <img src="IMG_0231 (002).jpg"></img>
+    <img src="IMG_1177 (002).jpg"></img>
+    <img src="IMG_3220 (002).jpg"></img>
   </div>
   
   <p align="center" style="font-family: Verdana" font size="+1">
-    This page will have many tasty recipes.  More to come!
+    Some great family trips.  Hopefully, more to come!
   </p>
 
-  <a href="https://www.thepioneerwoman.com/food-cooking/recipes/a42029313/baked-ravioli-recipe/">Dinner recipe for Baked Lasagna</a>
-   
-<p> <a href="deserts.html">Return to deserts</a> </p>
+  <script>
   
+  var currentIndex = 0; 
+  var images = document.getElementbyClassName (carousel-img")
+ 
+  function showImage(index) {
+    for (var i= 0 i < images.length; i++) {
+        images[i].style.display = none;
+    }
+        images[index].style.display = "block";
+        currentIndex = Index;
+  }
+    function nextImage() {
+        current index = (currentIndex + 1) % images.length;
+        showImage(curentIndex);
+    }
+    function previousImage() {
+        currentIndex = (CurrentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    }
+
+    showImage (currentIndex);
+  </script>
+
+</body>
+<html>
+    
+   </script>
 </body>
 </html>
